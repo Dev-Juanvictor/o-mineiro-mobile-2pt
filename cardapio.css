@@ -1,0 +1,342 @@
+:root {
+    --paper: #15110D;
+    --paper-card: #221B14;
+    --ink: #EDE0C8;
+    --ink-soft: #A8927A;
+    --telha: #B8501F;
+    --telha-dark: #E0854A;
+    --ouro: #DB9A3F;
+    --mata: #6B8F6E;
+    --line: rgba(237, 224, 200, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(43, 32, 22, 0.07) 1px, transparent 0);
+    background-size: 18px 18px;
+    color: var(--ink);
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+}
+
+/* HERO */
+.hero {
+    padding: 64px 0 40px;
+    text-align: center;
+    position: relative;
+}
+
+.compass {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto 12px;
+    opacity: 1;
+}
+
+.eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--telha-dark);
+    margin-bottom: 14px;
+}
+
+h1.brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(48px, 10vw, 86px);
+    margin: 0;
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+}
+
+h1.brand em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--telha);
+}
+
+.tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 18px;
+    letter-spacing: 0.02em;
+}
+
+.hero-rule {
+    width: 120px;
+    height: 2px;
+    background: var(--ouro);
+    margin: 28px auto 0;
+    opacity: 0.6;
+}
+
+/* SECTION LABELS */
+.section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin: 96px 0 8px;
+}
+
+.section-head .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--telha);
+    border: 1px solid var(--telha);
+    border-radius: 100px;
+    padding: 2px 10px;
+}
+
+.section-head h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+
+.section-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin: 6px 0 36px;
+    padding-left: 2px;
+}
+
+/* ROAD / ROUTE for burgers */
+.estrada {
+    position: relative;
+    padding-left: 42px;
+}
+
+.estrada::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background-image: linear-gradient(var(--ouro) 60%, transparent 0%);
+    background-size: 2px 12px;
+    background-repeat: repeat-y;
+    opacity: 0.55;
+}
+
+.stop {
+    position: relative;
+    margin-bottom: 38px;
+    padding: 26px 26px 24px;
+    background: var(--paper-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(43, 32, 22, 0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.stop:hover {
+    transform: translateX(4px);
+    box-shadow: 4px 6px 0 rgba(166, 64, 43, 0.10);
+}
+
+.stop::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 30px;
+    width: 11px;
+    height: 11px;
+    background: var(--telha);
+    border-radius: 50%;
+    border: 3px solid var(--paper);
+    box-shadow: 0 0 0 1px var(--telha);
+}
+
+.stop-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.stop-km {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--telha-dark);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.stop-name {
+    font-family: 'Fraunces', serif;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.05;
+}
+
+.stop-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--mata);
+    border: 1px solid var(--mata);
+    border-radius: 100px;
+    padding: 3px 11px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.stop-desc {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin: 0 0 14px;
+}
+
+.stop-desc b {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.price-stamp {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--telha);
+    border: 1.5px dashed var(--telha);
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 3px;
+    transform: rotate(-1.5deg);
+}
+
+/* SIMPLE GRID (petiscos, pizzas, sobremesas) */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 22px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px dotted var(--line);
+    gap: 12px;
+}
+
+.item-name {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.item-note {
+    display: block;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 3px;
+}
+
+.item-price {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--telha);
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+footer .line {
+    width: 60px;
+    height: 1px;
+    background: var(--ink-soft);
+    margin: 0 auto 14px;
+    opacity: 0.4;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 640px) {
+    .wrap {
+        padding: 0 16px 60px;
+    }
+
+    .hero {
+        padding: 40px 0 24px;
+    }
+
+    .section-head {
+        margin: 56px 0 8px;
+    }
+
+    .section-head h2 {
+        font-size: 24px;
+    }
+
+    .estrada {
+        padding-left: 28px;
+    }
+
+    .estrada::before {
+        left: 8px;
+    }
+
+    .stop {
+        padding: 20px 18px 18px;
+        margin-bottom: 24px;
+    }
+
+    .stop::before {
+        left: -28px;
+    }
+
+    .stop-top {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .stop-name {
+        font-size: 22px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+}

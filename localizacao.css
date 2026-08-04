@@ -1,0 +1,240 @@
+:root {
+    --paper: #15110D;
+    --paper-card: #221B14;
+    --ink: #EDE0C8;
+    --ink-soft: #A8927A;
+    --telha: #B8501F;
+    --telha-dark: #E0854A;
+    --ouro: #DB9A3F;
+    --mata: #6B8F6E;
+    --line: rgba(237, 224, 200, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(43, 32, 22, 0.07) 1px, transparent 0);
+    background-size: 18px 18px;
+    color: var(--ink);
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+}
+
+/* HERO */
+.hero {
+    padding: 64px 0 32px;
+    text-align: center;
+}
+
+.eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--telha-dark);
+    margin-bottom: 14px;
+}
+
+h1.brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(38px, 8vw, 60px);
+    margin: 0;
+    line-height: 0.95;
+}
+
+.hero-rule {
+    width: 100px;
+    height: 2px;
+    background: var(--ouro);
+    margin: 24px auto 0;
+    opacity: 0.6;
+}
+
+/* INFO CARD */
+.info-card {
+    background: var(--paper-card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 30px;
+    margin-top: 40px;
+}
+
+.info-row {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px dotted var(--line);
+    align-items: flex-start;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-icon {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid var(--telha);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--telha);
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+}
+
+.info-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.info-value span.note {
+    display: block;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 2px;
+}
+
+/* MAP */
+.map-frame {
+    margin-top: 28px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    filter: sepia(12%) saturate(85%);
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 320px;
+    border: 0;
+    display: block;
+}
+
+/* BUTTONS */
+.actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 4px;
+    transition: transform .2s ease, box-shadow .2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-maps {
+    background: var(--telha);
+    color: var(--ink);
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.btn-whats {
+    background: var(--mata);
+    color: var(--ink);
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+footer .line {
+    width: 60px;
+    height: 1px;
+    background: var(--ink-soft);
+    margin: 0 auto 14px;
+    opacity: 0.4;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 640px) {
+    .wrap {
+        padding: 0 16px 60px;
+    }
+
+    .hero {
+        padding: 40px 0 20px;
+    }
+
+    .info-card {
+        padding: 20px 18px;
+        margin-top: 24px;
+    }
+
+    .info-value {
+        font-size: 16px;
+    }
+
+    .map-frame {
+        margin-top: 20px;
+    }
+
+    .map-frame iframe {
+        height: 240px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        min-width: 0;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
