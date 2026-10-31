@@ -1,243 +1,333 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ô Mineiro — Cardápio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Mono:wght@400;700&family=Public+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="cardapio.css" />
-  </head>
-  <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header">
-<a class="wordmark" href="index.html">Ô Mineiro<span>DESDE 1996</span>
-</a>
-<a class="header-location" href="localizacao.html">Visite a casa ↗</a>
-</header>
-    <main class="wrap" id="conteudo">
-      <div class="hero">
-        <img src="assets/logo-o-mineiro.png" alt="Ô Mineiro — Restaurante desde 1996" class="compass" />
-        <div class="eyebrow">Estrada Real · Minas Gerais</div>
-        <h1 class="brand">Um roteiro de <em>sabores.</em>
-</h1>
-        <div class="tagline">Escolha sua próxima parada. A gente cuida do sabor.</div>
-        <div class="hero-rule">
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15110D">
+  <title>Ô Mineiro — Cardápio</title>
+  <meta name="description" content="Cardápio do Ô Mineiro em Casa Forte, Recife: hambúrgueres da Estrada Real, petiscos, espetinhos na brasa, caldinhos e sobremesas.">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ô Mineiro">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Ô Mineiro — Cardápio">
+  <meta property="og:description" content="Um roteiro de sabores pela Estrada Real: hambúrgueres, petiscos, espetinhos, caldinhos e sobremesas.">
+  <meta property="og:url" content="https://dev-juanvictor.github.io/o-mineiro-mobile-2pt/cardapio.html">
+  <meta property="og:image" content="https://dev-juanvictor.github.io/o-mineiro-mobile-2pt/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Ô Mineiro<span>DESDE 1996</span></a>
+    <a class="header-location" href="localizacao.html">Visite a casa →</a>
+  </header>
+
+  <main class="wrap" id="conteudo">
+    <div class="hero">
+      <img src="assets/logo-o-mineiro.webp" width="438" height="171" alt="Ô Mineiro — Restaurante desde 1996" class="compass">
+      <p class="eyebrow">Estrada Real · Minas Gerais</p>
+      <h1 class="brand">Um roteiro de <em>sabores.</em></h1>
+      <p class="tagline">Escolha sua próxima parada. A gente cuida do sabor.</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </div>
+
+    <nav class="categories" aria-label="Categorias do cardápio">
+      <a href="#burgers">Hambúrgueres</a>
+      <a href="#petiscos">Petiscos</a>
+      <a href="#espetinhos">Espetinhos</a>
+      <a href="#caldinhos">Caldinhos</a>
+      <a href="#sobremesas">Sobremesas</a>
+    </nav>
+
+    <!-- HAMBÚRGUERES -->
+    <section id="burgers" aria-labelledby="t-burgers">
+      <div class="section-head">
+        <span class="num" aria-hidden="true">01</span>
+        <h2 id="t-burgers">O Roteiro</h2>
       </div>
+      <p class="section-sub">Sete paradas, cada uma o hambúrguer de uma cidade mineira.</p>
+      <ul class="estrada">
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 1</span>
+                <h3 class="stop-name">Uberaba</h3>
+              </div>
+              <span class="stop-tag">Clássico</span>
+            </div>
+            <p class="stop-desc">Pão, <b>hambúrguer (150g)</b>, queijo prato, salada.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
 
-      <nav class="categories" aria-label="Categorias do cardápio">
-<a href="#burgers">Hambúrgueres</a>
-<a href="#petiscos">Petiscos</a>
-<a href="#pizzas">Pizzas</a>
-<a href="#sobremesas">Sobremesas</a>
-</nav>
-<!-- BURGERS -->
-      <div class="section-head" id="burgers">
-        <span class="num">01</span>
-        <h2>O Roteiro</h2>
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 2</span>
+                <h3 class="stop-name">Ouro Preto</h3>
+              </div>
+              <span class="stop-tag">Duplo</span>
+            </div>
+            <p class="stop-desc">Pão, <b>2x hambúrguer (150g)</b>, 2x queijo prato, salada, cebola caramelizada.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 3</span>
+                <h3 class="stop-name">Barbacena</h3>
+              </div>
+              <span class="stop-tag">Bacon</span>
+            </div>
+            <p class="stop-desc">Pão, <b>hambúrguer (150g)</b>, bacon, queijo cheddar, cebola caramelizada.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+
+          <li class="stop stop--destaque">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 4 · fogueira</span>
+                <h3 class="stop-name">Trem na Brasa</h3>
+              </div>
+              <span class="stop-tag">Costela</span>
+            </div>
+            <p class="stop-desc">Pão, <b>hambúrguer (150g)</b> com <b>costela desfiada</b>, queijo prato ou coalho, cebola caramelizada, alface, tomate.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 5</span>
+                <h3 class="stop-name">Serro</h3>
+              </div>
+              <span class="stop-tag">Queijo</span>
+            </div>
+            <p class="stop-desc">Pão, <b>hambúrguer (150g)</b>, queijo grelhado, queijo cheddar, cebola caramelizada, alface, tomate.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 6</span>
+                <h3 class="stop-name">Tiradentes</h3>
+              </div>
+              <span class="stop-tag">Pernil</span>
+            </div>
+            <p class="stop-desc">Pão, <b>pernil desfiado</b>, maionese da casa, queijo prato, cebola caramelizada, alface, tomate.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+
+          <li class="stop">
+            <div class="stop-top">
+              <div>
+                <span class="stop-km">Parada 7 · fim de linha</span>
+                <h3 class="stop-name">Viçosa</h3>
+              </div>
+              <span class="stop-tag">Frango</span>
+            </div>
+            <p class="stop-desc">Pão, <b>filé de peito marinado crocante</b>, bacon, cebola caramelizada, tomate, alface.</p>
+            <span class="price-stamp">[preço]</span>
+          </li>
+      </ul>
+    </section>
+
+    <!-- PETISCOS -->
+    <section id="petiscos" aria-labelledby="t-petiscos">
+      <div class="section-head">
+        <span class="num" aria-hidden="true">02</span>
+        <h2 id="t-petiscos">Petiscos</h2>
       </div>
-      <p class="section-sub">
-        seis paradas, cada uma o hambúrguer de uma cidade mineira
-      </p>
-
-      <div class="estrada">
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 1</span>
-              <h3 class="stop-name">Uberaba</h3>
-            </div>
-            <span class="stop-tag">Clássico</span>
+      <p class="section-sub">Pra começar bem a viagem.</p>
+      <h3 class="group-label">Porções</h3>
+      <ul class="grid">
+        <li class="item">
+          <div>
+            <span class="item-name">Batata Frita</span>
+            <span class="item-note">300g</span>
           </div>
-          <p class="stop-desc">
-            Pão, <b>hambúrguer (160g)</b>, queijo prato, salada.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 2</span>
-              <h3 class="stop-name">Ouro Preto</h3>
-            </div>
-            <span class="stop-tag">Duplo</span>
-          </div>
-          <p class="stop-desc">
-            Pão, <b>2x hambúrguer (120g)</b>, 2x queijo prato, salada, cebola
-            caramelizada.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 3</span>
-              <h3 class="stop-name">Barbacena</h3>
-            </div>
-            <span class="stop-tag">Bacon</span>
-          </div>
-          <p class="stop-desc">
-            Pão, <b>hambúrguer (160g)</b>, bacon, queijo cheddar, cebola
-            caramelizada.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 4 · fogueira</span>
-              <h3 class="stop-name">Trem na Brasa</h3>
-            </div>
-            <span class="stop-tag">Costela</span>
-          </div>
-          <p class="stop-desc">
-            Pão, <b>hambúrguer de costela (180g, na brasa)</b>, queijo prato ou
-            coalho, cebola caramelizada, alface, tomate.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 5</span>
-              <h3 class="stop-name">Serro</h3>
-            </div>
-            <span class="stop-tag">Queijo</span>
-          </div>
-          <p class="stop-desc">
-            Pão, <b>hambúrguer (160g)</b>, queijo grelhado, queijo cheddar,
-            cebola caramelizada, alface, tomate.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-
-        <div class="stop">
-          <div class="stop-top">
-            <div>
-              <span class="stop-km">Parada 6 · fim de linha</span>
-              <h3 class="stop-name">Viçosa</h3>
-            </div>
-            <span class="stop-tag">Frango</span>
-          </div>
-          <p class="stop-desc">
-            Pão, <b>filé de peito marinado crocante</b>, bacon, cebola
-            caramelizada, tomate, alface.
-          </p>
-          <span class="price-stamp">[preço]</span>
-        </div>
-      </div>
-
-      <!-- PETISCOS -->
-      <div class="section-head" id="petiscos">
-        <span class="num">02</span>
-        <h2>Petiscos</h2>
-      </div>
-      <p class="section-sub">pra começar bem a viagem</p>
-      <div class="grid">
-        <div class="item">
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
           <div>
             <span class="item-name">Batata Diamantina</span>
-            <span class="item-note">receita a definir</span>
+            <span class="item-note">300g · com cheddar e bacon</span>
           </div>
           <span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Onion Rings</span>
+        </li>
+        <li class="item">
+          <div>
+            <span class="item-name">Onion Rings</span>
+            <span class="item-note">15 unidades</span>
+          </div>
           <span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Croquete Mineiro</span>
+        </li>
+        <li class="item">
+          <div>
+            <span class="item-name">Croquete Mineiro</span>
+            <span class="item-note">6 unidades</span>
+          </div>
           <span class="item-price">[preço]</span>
-        </div>
-      </div>
+        </li>
+        <li class="item">
+          <div>
+            <span class="item-name">Panceta</span>
+            <span class="item-note">Acompanha geleia de pimenta</span>
+          </div>
+          <span class="item-price">[preço]</span>
+        </li>
+      </ul>
 
-      <!-- PIZZAS -->
-      <div class="section-head" id="pizzas">
-        <span class="num">03</span>
-        <h2>Pizzas</h2>
-      </div>
-      <p class="section-sub">salgadas e doces</p>
-      <div class="grid">
-        <div class="item">
-          <span class="item-name">Calabresa</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Frango com Catupiry</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Peperoni</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Mussarela</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Quatro Queijos</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Bacon</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Brigadeiro</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Nutella</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-      </div>
+      <h3 class="group-label">Pão de alho</h3>
+      <ul class="grid">
+        <li class="item">
+          <span class="item-name">Tradicional</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Com calabresa</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Com charque</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Com queijo do reino</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Com camarão</span>
+          <span class="item-price">[preço]</span>
+        </li>
+      </ul>
+    </section>
 
-      <!-- SOBREMESAS -->
-      <div class="section-head" id="sobremesas">
-        <span class="num">04</span>
-        <h2>Sobremesas</h2>
+    <!-- ESPETINHOS -->
+    <section id="espetinhos" aria-labelledby="t-espetinhos">
+      <div class="section-head">
+        <span class="num" aria-hidden="true">03</span>
+        <h2 id="t-espetinhos">Espetinhos</h2>
       </div>
-      <p class="section-sub">pra fechar com chave de ouro</p>
-      <div class="grid">
-        <div class="item">
-          <span class="item-name">Brownie</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-        <div class="item">
-          <span class="item-name">Sorvete</span
-          >
-<span class="item-price">[preço]</span>
-        </div>
-      </div>
+      <p class="section-sub">Direto da brasa.</p>
+      <ul class="grid">
+        <li class="item">
+          <span class="item-name">Carne</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Carne com queijo</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Carne com bacon</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Frango</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Frango com queijo</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Frango com bacon</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Coração</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Camarão</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Maminha</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Picanha</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Queijo na brasa</span>
+          <span class="item-price">[preço]</span>
+        </li>
+      </ul>
+    </section>
 
-      <footer>Ô Mineiro<span>Sabor de Minas, direto na brasa.</span>
-</footer>
-    </main>
-<nav class="bottom-nav" aria-label="Navegação principal">
-<a href="index.html" >
-<span aria-hidden="true">⌂</span>Início</a>
-<a href="cardapio.html" aria-current="page">
-<span aria-hidden="true">≡</span>Cardápio</a>
-<a href="localizacao.html" >
-<span aria-hidden="true">↗</span>Visite a casa</a>
-</nav>
+    <!-- CALDINHOS -->
+    <section id="caldinhos" aria-labelledby="t-caldinhos">
+      <div class="section-head">
+        <span class="num" aria-hidden="true">04</span>
+        <h2 id="t-caldinhos">Caldinhos</h2>
+      </div>
+      <p class="section-sub">Pra esquentar a prosa.</p>
+      <ul class="grid">
+        <li class="item">
+          <span class="item-name">Costela</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Feijoada</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Camarão</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Macaxeira</span>
+          <span class="item-price">[preço]</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SOBREMESAS -->
+    <section id="sobremesas" aria-labelledby="t-sobremesas">
+      <div class="section-head">
+        <span class="num" aria-hidden="true">05</span>
+        <h2 id="t-sobremesas">Sobremesas</h2>
+      </div>
+      <p class="section-sub">Pra fechar com chave de ouro.</p>
+      <ul class="grid">
+        <li class="item">
+          <span class="item-name">Brownie com Sorvete</span>
+          <span class="item-price">[preço]</span>
+        </li>
+        <li class="item">
+          <span class="item-name">Petit Gâteau</span>
+          <span class="item-price">[preço]</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer>Ô Mineiro <span>Sabor de Minas, direto na brasa.</span></footer>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <a href="index.html">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9v12h13V9"/><path d="M10 21v-6h4v6"/></svg>Início</a>
+    <a href="cardapio.html" aria-current="page">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></svg>Cardápio</a>
+    <a href="localizacao.html">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Visite a casa</a>
+  </nav>
 </body>
 </html>
